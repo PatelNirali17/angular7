@@ -8,13 +8,11 @@
           <mat-error *ngIf="username.invalid">{{getErrorMessage()}}</mat-error>
         </mat-form-field>
 
-       
           <mat-form-field>
-            <input matInput placeholder="Enter your email" matInput [formControl]="email" required>
+            <input matInput placeholder="Enter your email" matInput [formControl]="email" required autocomplete="off">
             <mat-error *ngIf="email.invalid">{{getErrorMessage1()}}</mat-error>
           </mat-form-field>
-        
-
+      
         <mat-form-field>
           <input matInput placeholder="Enter your password" [type]="hide ? 'password' : 'text'" matInput
             [formControl]="pass" required>
@@ -25,6 +23,7 @@
         <button class="mt-2 btn" mat-raised-button color="primary" (click)="login(usnm.value)">Login</button>
 
         <a class="mt-2 forgot-pass text-primary" (click)="onclick()">Forgot password ?</a>
+        <a class="mt-2 text-primary account" (click)="click()">Registration here</a>
 
       </div>
 

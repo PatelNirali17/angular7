@@ -38,4 +38,7 @@ export class LoginComponent implements OnInit {
   onclick(){
     this.router.navigate(['forgot'])
   }
+  click(){
+    this.router.navigate(['registration'])
+  }
 }

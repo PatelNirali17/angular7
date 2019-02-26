@@ -4,7 +4,7 @@
     background-color: #e1e1e7c4;
     width: 100vh;
     margin: 0 auto;
-    height: 50vh;
+    height: 55vh;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
@@ -22,5 +22,8 @@
     box-shadow: 3px 4px 3px 4px #a6a6a7;
   }
   .forgot-pass{
+    cursor: pointer;
+  }
+  .account{
     cursor: pointer;
   }
