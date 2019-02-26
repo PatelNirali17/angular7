@@ -1,20 +1,20 @@
 import { Injectable } from '@angular/core';
 import { CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 
-
 @Injectable({
   providedIn: 'root'
 })
-export class LoginGuardService implements CanActivate {
+export class ForgotGuardService implements CanActivate {
 
   constructor() { }
-  canActivate(route:ActivatedRouteSnapshot,state:RouterStateSnapshot):boolean {
+
+  canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): boolean {
     // return false;
     //  return route.params['usnm'] === 'nirali';
-     if(route.params['usnm']){
-       return true; 
-     }else{
-       return false;
-     }
+    if(route.params['usnm']){
+      return true; 
+    }else{
+      return false;
+    }
   }
 }

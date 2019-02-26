@@ -21,7 +21,7 @@ export class ChangePasswordComponent implements OnInit {
             '';
   }
   hide = true;
-  show = true;
+  show = false;
   constructor(private router: Router) { }
 
   ngOnInit() {

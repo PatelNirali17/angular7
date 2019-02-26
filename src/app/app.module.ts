@@ -20,6 +20,7 @@ import { ForgotPasswordComponent } from './forgot-password/forgot-password.compo
 import { SuccessLoginComponent } from './success-login/success-login.component';
 import { LoginGuardService } from './login-guard.service';
 import { ChangePasswordComponent } from './forgot-password/change-password/change-password.component';
+import { ForgotGuardService } from './forgot-guard.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -44,7 +45,7 @@ import { ChangePasswordComponent } from './forgot-password/change-password/chang
     MatIconModule,
     MatButtonModule
   ],
-  providers: [LoginGuardService],
+  providers: [LoginGuardService,ForgotGuardService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

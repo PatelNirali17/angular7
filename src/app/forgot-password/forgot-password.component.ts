@@ -8,17 +8,17 @@ import { Router } from '@angular/router';
   styleUrls: ['./forgot-password.component.css']
 })
 export class ForgotPasswordComponent implements OnInit {
-  email = new FormControl('', [Validators.required, Validators.email]);
-  getErrorMessage1() {
-    return this.email.hasError('required') ? 'You must enter a email' :
-        this.email.hasError('email') ? 'Not a valid email' :
+  usnm:string
+  username = new FormControl('', [Validators.required]);
+   getErrorMessage() {
+    return this.username.hasError('required') ? 'You must enter a username' :
             '';
   }
   constructor( private router:Router) { }
   
   ngOnInit() {
   }
-change(){
-  this.router.navigate(['change-pass'])
+change(usnm:string){
+  this.router.navigate(['change-pass',usnm])
 }
 }
