@@ -1,0 +1,62 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h4 class="text-center">Registration</h4>
+      <div class="example-container">
+        <mat-form-field>
+          <input matInput placeholder="Username" matInput [formControl]="username" required>
+          <mat-error *ngIf="username.invalid">{{getErrorMessage()}}</mat-error>
+        </mat-form-field>
+
+        
+          <mat-form-field>
+            <input matInput placeholder="Enter your email" matInput [formControl]="email" required>
+            <mat-error *ngIf="email.invalid">{{getErrorMessage1()}}</mat-error>
+          </mat-form-field>
+       
+        <mat-form-field>
+          <input matInput placeholder="Enter your password" [type]="hide ? 'password' : 'text'" matInput [formControl]="pass" required>
+          <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+          <mat-error *ngIf="pass.invalid">{{getErrorMessage2()}}</mat-error>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <span matPrefix>+91 &nbsp;</span>
+          <input type="tel" matInput placeholder="Telephone" matInput [formControl]="phoneno" required>
+          <mat-icon matSuffix>mode_edit</mat-icon>
+          <mat-error *ngIf="phoneno.invalid">{{getErrorMessage3()}}</mat-error>
+        </mat-form-field>
+
+        <mat-radio-group>
+          <mat-label>Gender : </mat-label><br>
+          <mat-radio-button value="1">Male</mat-radio-button>
+          <mat-radio-button value="2">Female</mat-radio-button>
+        </mat-radio-group>
+
+        <mat-form-field>
+            <mat-select placeholder="Courses" matInput [formControl]="course" required>
+              <mat-option *ngFor="let course of courses" [value]="course.value">
+                {{course.viewValue}}
+              </mat-option>
+            </mat-select>
+            <mat-error *ngIf="course.invalid">{{getErrorMessage4()}}</mat-error>
+          </mat-form-field>
+
+        <mat-form-field>
+          <mat-select placeholder="City" matInput [formControl]="city" required>
+            <mat-option value="option">Mumbai</mat-option>
+            <mat-option value="option">Pune</mat-option>
+            <mat-option value="option">Chikhli</mat-option>
+            <mat-option value="option">Navsari</mat-option>
+            <mat-option value="option">Surat</mat-option>
+            <mat-option value="option">Indore</mat-option>
+          </mat-select>
+          <mat-error *ngIf="city.invalid">{{getErrorMessage4()}}</mat-error>
+        </mat-form-field>
+        <button class="mt-2 btn" mat-raised-button color="primary">Submit</button>
+
+      </div>
+
+    </div>
+  </div>
+</div>

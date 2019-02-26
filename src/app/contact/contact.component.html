@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h4 class="text-center">Contact</h4>
+        <div class="example-container">
+          <mat-form-field>
+            <input matInput placeholder="Username" matInput [formControl]="username" required>
+            <mat-error *ngIf="username.invalid">{{getErrorMessage()}}</mat-error>
+          </mat-form-field>
+  
+         
+            <mat-form-field>
+              <input matInput placeholder="Enter your email" matInput [formControl]="email" required>
+              <mat-error *ngIf="email.invalid">{{getErrorMessage1()}}</mat-error>
+            </mat-form-field>
+          
+          <mat-form-field class="example-full-width">
+            <span matPrefix>+91 &nbsp;</span>
+            <input type="tel" matInput placeholder="Telephone" matInput [formControl]="phoneno" required>
+            <mat-icon matSuffix>mode_edit</mat-icon>
+            <mat-error *ngIf="phoneno.invalid">{{getErrorMessage2()}}</mat-error>
+          </mat-form-field>
+  
+          <mat-form-field hintLabel="Max 250 characters">
+              <textarea matInput #input maxlength="250" placeholder="Message"  matInput [formControl]="message" required></textarea>
+              <mat-error *ngIf="message.invalid">{{getErrorMessage3()}}</mat-error>
+              <mat-hint align="end">{{input.value?.length || 0}}/250</mat-hint>
+            </mat-form-field>
+      
+          <button class="mt-2 btn" mat-raised-button color="primary">Send message</button>
+  
+        </div>
+  
+      </div>
+    </div>
+  </div>
