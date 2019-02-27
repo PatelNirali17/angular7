@@ -8,17 +8,17 @@ import { Router } from '@angular/router';
   styleUrls: ['./forgot-password.component.css']
 })
 export class ForgotPasswordComponent implements OnInit {
-  usnm:string
+  usnm: string
   username = new FormControl('', [Validators.required]);
-   getErrorMessage() {
+  getErrorMessage() {
     return this.username.hasError('required') ? 'You must enter a username' :
-            '';
+      '';
   }
-  constructor( private router:Router) { }
-  
+  constructor(private router: Router) { }
+
   ngOnInit() {
   }
-change(usnm:string){
-  this.router.navigate(['change-pass',usnm])
-}
+  change(usnm: string) {
+    this.router.navigate(['change-pass', usnm])
+  }
 }
