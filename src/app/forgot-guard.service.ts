@@ -14,7 +14,8 @@ export class ForgotGuardService implements CanActivate {
     if(route.params['usnm']){
       return true; 
     }else{
-      return false;
+      // return false;
+      alert('You must enter a username');
     }
   }
 }

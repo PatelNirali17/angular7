@@ -1,7 +1,8 @@
 .container{
     background-color: white;
-    box-shadow: 0 0 3px 3px #dbd8d8;
+    box-shadow: 0 0 5px 5px #e7e2e2;
     width: 500px;
+    height: 30vh;
     margin-top: 150px; 
     border-radius: 5px;
 }

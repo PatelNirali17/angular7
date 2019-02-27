@@ -15,9 +15,9 @@ const routes: Routes = [
   {path:'home',component:HomeComponent},
   {path:'login',component:LoginComponent},
   {path:'registration',component:RegistrationComponent},
-  {path:'cotact',component:ContactComponent},
+  {path:'contact',component:ContactComponent},
   {path:'forgot',component:ForgotPasswordComponent},
-  {path:'success-login/:usnm',component:SuccessLoginComponent,canActivate: [LoginGuardService]},
+  {path:'success-login/:usnm',component:SuccessLoginComponent, canActivate: [LoginGuardService]},
   {path:'change-pass/:usnm',component:ChangePasswordComponent, canActivate: [ForgotGuardService]}
 ];
 

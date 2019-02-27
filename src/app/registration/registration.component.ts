@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 export interface Course {
   value: string;
@@ -53,9 +54,11 @@ export class RegistrationComponent implements OnInit {
     {value: 'databse', viewValue: 'Database'},
     {value: 'android', viewValue: 'Android'}
   ];
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
-
+  click(usnm: string){
+    this.router.navigate(['login',usnm])
+  }
 }

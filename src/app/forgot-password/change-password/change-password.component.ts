@@ -9,14 +9,14 @@ import { Router } from '@angular/router';
 })
 export class ChangePasswordComponent implements OnInit {
   pass1 = new FormControl('', [Validators.required, Validators.minLength(8)]);
-  pass2 = new FormControl('', [Validators.required, Validators.minLength(6)]);
+  pass2 = new FormControl('', [Validators.required, Validators.minLength(8)]);
   getErrorMessage1() {
     return this.pass1.hasError('required') ? 'You must enter a password' :
-        this.pass1.hasError('minLength') ? '' :
+        this.pass1.hasError('minLength') ? 'you must enter minimum 8 character' :
             '';
   }
   getErrorMessage2() {
-    return this.pass2.hasError('required') ? 'You must enter a password' :
+    return this.pass2.hasError('required') ? 'You must enter a conform password' :
         this.pass2.hasError('minLength') ? '' :
             '';
   }
@@ -26,8 +26,6 @@ export class ChangePasswordComponent implements OnInit {
 
   ngOnInit() {
   }
-  changepass(){
-    this.router.navigate(['login'])
-  }
+
 
 }

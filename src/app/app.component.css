@@ -1,17 +1,17 @@
 .navbar{
-    background-color: #1df3b3;
+    background-color: #1976d2;
 }
 .navbar-brand{
-    color: black;
+    color: white;
 }
 .nav-link{
-    color: black;
+    color: white;
 }
 .nav-link:hover{
-    color: white;
+    color: #d8d9da;
 }
 .active{
     color: white;
-    background-color: black;
+    background-color: #2e87e0;
     border-radius: 10px;
 }
