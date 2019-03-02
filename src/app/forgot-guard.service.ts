@@ -12,6 +12,7 @@ export class ForgotGuardService implements CanActivate {
     // return false;
     //  return route.params['usnm'] === 'nirali';
     if(route.params['usnm']){
+      alert('Successful!');
       return true; 
     }else{
       // return false;

@@ -12,6 +12,7 @@ export class LoginGuardService implements CanActivate {
     // return false;
     //  return route.params['usnm'] === 'nirali';
      if(route.params['usnm']){
+      alert('Successful login');
        return true; 
      }else{
       //  return false;
