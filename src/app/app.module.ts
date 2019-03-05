@@ -21,6 +21,7 @@ import { SuccessLoginComponent } from './success-login/success-login.component';
 import { LoginGuardService } from './login-guard.service';
 import { ChangePasswordComponent } from './forgot-password/change-password/change-password.component';
 import { ForgotGuardService } from './forgot-guard.service';
+import { CalculatorComponent } from './calculator/calculator.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +31,8 @@ import { ForgotGuardService } from './forgot-guard.service';
     HomeComponent,
     ForgotPasswordComponent,
     SuccessLoginComponent,
-    ChangePasswordComponent
+    ChangePasswordComponent,
+    CalculatorComponent
   ],
   imports: [
     BrowserModule,
