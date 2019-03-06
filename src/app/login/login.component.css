@@ -1,6 +1,6 @@
 .container{
-    border: 4px double #068efd;
-    box-shadow: 4px 6px 3px 5px #a6a6a7;
+    border: 2px solid #FFF;
+    box-shadow: -3px 3px 7px rgba(0, 0, 0, .6), inset -100px 0px 100px rgba(255, 255, 255, .5);
     background-color: #e1e1e7c4;
     width: 100vh;
     margin: 0 auto;

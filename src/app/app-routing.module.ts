@@ -9,6 +9,7 @@ import { SuccessLoginComponent } from './success-login/success-login.component';
 import { LoginGuardService } from './login-guard.service';
 import { ChangePasswordComponent } from './forgot-password/change-password/change-password.component';
 import { ForgotGuardService } from './forgot-guard.service';
+import { CalculatorComponent } from './calculator/calculator.component';
 
 const routes: Routes = [
   {path:'',component:HomeComponent},
@@ -18,7 +19,8 @@ const routes: Routes = [
   {path:'contact',component:ContactComponent},
   {path:'forgot',component:ForgotPasswordComponent},
   {path:'success-login/:usnm',component:SuccessLoginComponent, canActivate: [LoginGuardService]},
-  {path:'change-pass/:usnm',component:ChangePasswordComponent, canActivate: [ForgotGuardService]}
+  {path:'change-pass/:usnm',component:ChangePasswordComponent, canActivate: [ForgotGuardService]},
+  {path:'calculator',component:CalculatorComponent},
 ];
 
 @NgModule({
