@@ -11,5 +11,5 @@ export class CalculatorComponent implements OnInit {
 
   ngOnInit() {
   }
-
+ 
 }

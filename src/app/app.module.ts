@@ -22,6 +22,7 @@ import { LoginGuardService } from './login-guard.service';
 import { ChangePasswordComponent } from './forgot-password/change-password/change-password.component';
 import { ForgotGuardService } from './forgot-guard.service';
 import { CalculatorComponent } from './calculator/calculator.component';
+import { CalCulAtorComponent } from './cal-cul-ator/cal-cul-ator.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +33,8 @@ import { CalculatorComponent } from './calculator/calculator.component';
     ForgotPasswordComponent,
     SuccessLoginComponent,
     ChangePasswordComponent,
-    CalculatorComponent
+    CalculatorComponent,
+    CalCulAtorComponent
   ],
   imports: [
     BrowserModule,

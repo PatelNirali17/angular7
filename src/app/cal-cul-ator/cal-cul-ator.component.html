@@ -1,0 +1,14 @@
+<div class="calculator">
+  <h1>calculator</h1>
+  <div>
+    <input type="text" class="result" readonly>
+  </div>
+  <div>
+    <button class="responsive long" *ngFor="let longbutton of longbuttons">
+      {{ longbutton }}
+    </button>
+    <button  class="responsive" *ngFor="let button of buttons">
+      {{ button }}
+    </button>
+  </div>
+</div>
