@@ -12,6 +12,7 @@ import { ForgotGuardService } from './forgot-guard.service';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { CalCulAtorComponent } from './cal-cul-ator/cal-cul-ator.component';
 import { StepperComponent } from './stepper/stepper.component';
+import { PostFormComponent } from './post-form/post-form.component';
 
 const routes: Routes = [
   {path:'',component:HomeComponent},
@@ -25,6 +26,7 @@ const routes: Routes = [
   {path:'calculator',component:CalculatorComponent},
   {path:'cal-cul-ator',component:CalCulAtorComponent},
   {path:'stepper',component:StepperComponent},
+  {path:'postfrom',component:PostFormComponent},
 ];
 
 @NgModule({

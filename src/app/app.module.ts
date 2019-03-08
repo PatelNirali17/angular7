@@ -25,6 +25,8 @@ import { CalculatorComponent } from './calculator/calculator.component';
 import { CalCulAtorComponent } from './cal-cul-ator/cal-cul-ator.component';
 import { StepperComponent } from './stepper/stepper.component';
 import {MatStepperModule} from '@angular/material/stepper';
+import { PostFormComponent } from './post-form/post-form.component';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,7 +39,8 @@ import {MatStepperModule} from '@angular/material/stepper';
     ChangePasswordComponent,
     CalculatorComponent,
     CalCulAtorComponent,
-    StepperComponent
+    StepperComponent,
+    PostFormComponent
   ],
   imports: [
     BrowserModule,
@@ -51,7 +54,8 @@ import {MatStepperModule} from '@angular/material/stepper';
     ReactiveFormsModule,
     MatIconModule,
     MatButtonModule,
-    MatStepperModule
+    MatStepperModule,
+    HttpClientModule
   ],
   providers: [LoginGuardService,ForgotGuardService],
   bootstrap: [AppComponent]
