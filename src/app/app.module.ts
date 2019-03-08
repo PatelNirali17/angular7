@@ -23,6 +23,8 @@ import { ChangePasswordComponent } from './forgot-password/change-password/chang
 import { ForgotGuardService } from './forgot-guard.service';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { CalCulAtorComponent } from './cal-cul-ator/cal-cul-ator.component';
+import { StepperComponent } from './stepper/stepper.component';
+import {MatStepperModule} from '@angular/material/stepper';
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +36,8 @@ import { CalCulAtorComponent } from './cal-cul-ator/cal-cul-ator.component';
     SuccessLoginComponent,
     ChangePasswordComponent,
     CalculatorComponent,
-    CalCulAtorComponent
+    CalCulAtorComponent,
+    StepperComponent
   ],
   imports: [
     BrowserModule,
@@ -47,7 +50,8 @@ import { CalCulAtorComponent } from './cal-cul-ator/cal-cul-ator.component';
     MatAutocompleteModule,
     ReactiveFormsModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
+    MatStepperModule
   ],
   providers: [LoginGuardService,ForgotGuardService],
   bootstrap: [AppComponent]

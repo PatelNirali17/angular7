@@ -1,13 +1,13 @@
 <div class="calculator">
   <h1>calculator</h1>
   <div>
-    <input type="text" class="result" readonly>
+    <input type="text" class="result" readonly value="{{ result }}">
   </div>
   <div>
-    <button class="responsive long" *ngFor="let longbutton of longbuttons">
+    <button class="responsive long" *ngFor="let longbutton of longbuttons" (click)="addToExpression(longbutton)">
       {{ longbutton }}
     </button>
-    <button  class="responsive" *ngFor="let button of buttons">
+    <button  class="responsive" *ngFor="let button of buttons" (click)="addToExpression(button)">
       {{ button }}
     </button>
   </div>

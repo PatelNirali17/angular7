@@ -11,6 +11,7 @@ import { ChangePasswordComponent } from './forgot-password/change-password/chang
 import { ForgotGuardService } from './forgot-guard.service';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { CalCulAtorComponent } from './cal-cul-ator/cal-cul-ator.component';
+import { StepperComponent } from './stepper/stepper.component';
 
 const routes: Routes = [
   {path:'',component:HomeComponent},
@@ -23,6 +24,7 @@ const routes: Routes = [
   {path:'change-pass/:usnm',component:ChangePasswordComponent, canActivate: [ForgotGuardService]},
   {path:'calculator',component:CalculatorComponent},
   {path:'cal-cul-ator',component:CalCulAtorComponent},
+  {path:'stepper',component:StepperComponent},
 ];
 
 @NgModule({
